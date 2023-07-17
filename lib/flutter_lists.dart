@@ -27,11 +27,11 @@ class UnorderedList<T> extends StatefulWidget {
 
   //Custom Item Builder for the list
   
-  final Widget Function(T? item)? itemBuilder;
+  final Widget Function(T?)? itemBuilder;
 
   // Custom Title builder for the list 
 
-  final String Function(T? item)? titleBuilder;
+  final String Function(T?)? titleBuilder;
   
   // Function for on Tap event for each Tile
   
@@ -51,16 +51,28 @@ class UnorderedList<T> extends StatefulWidget {
     );
 
   @override
-  State<UnorderedList> createState() => _UnorderedListState<T>();
+  State<UnorderedList<T>> createState() => _UnorderedListState<T>();
 }
 
-class _UnorderedListState<T> extends State<UnorderedList> {
+class _UnorderedListState<T> extends State<UnorderedList<T>> {
   
   // Variable to store the title based on the items given by user
   @override
   
-  Widget build(BuildContext context) {  
+  Widget build(BuildContext context) {
+
+    //Item builder and title builder cannot be set at the same time. Throw error if done so.
+
+    if(widget.itemBuilder!=null && widget.titleBuilder!=null){
+      throw Exception("The itemBuilder and titleBuilder property cannot be set simultaneously. Please use either of them");
+    }
+
+    // If both Item builder and Title builder are absent and the given datatype is not String, error is thrown 
     
+    if(widget.itemBuilder==null && widget.titleBuilder==null && T != String){
+      throw Exception("The itemBuilder or titleBuilder property should be set for the given datatype");
+    }
+
     return ListView.builder(
 
       itemCount: widget.items.length,
@@ -73,12 +85,14 @@ class _UnorderedListState<T> extends State<UnorderedList> {
       {
 
       // Variable to determine the title string from single item. It will determine what the title should be
-      String title;
+      late String title;
 
       // Variable to determine the bullet icon
-      IconData prefixIcon;
+      late IconData prefixIcon;
 
-      if(widget.titleBuilder==null){ 
+      // Check if there is an item builder or not
+      if(widget.itemBuilder==null){
+        if(widget.titleBuilder==null){
         // Check if items are in String or not
         // If the items are not in String and the user does not provide a title builder, the determination
         // of the title is not possible
@@ -92,8 +106,9 @@ class _UnorderedListState<T> extends State<UnorderedList> {
       }
       else{
         // Set the title to the String returned by the titlebuilder provided by the user
-      
+
         title = widget.titleBuilder!(widget.items[index]);
+      }
       }
 
       if(widget.bulletIcon==null){
