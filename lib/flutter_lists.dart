@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 // List of predefined Icons
 
 class ListIcons{  
-  static const IconData Bullet = IconData(0x2022); // Icon for 
+  static const IconData bullet = IconData(0x2022); // Icon for 
 }
 class UnorderedList<T> extends StatefulWidget {
 
   // List for items 
   
-  List<T> items;
+  final List<T> items;
 
   // Color for bullets
 
@@ -19,11 +19,11 @@ class UnorderedList<T> extends StatefulWidget {
 
   // Icon for bullets
 
-  IconData? bulletIcon;
+  final IconData? bulletIcon;
   
   // Physics for scroll view
 
-  ScrollPhysics? physics;
+  final ScrollPhysics? physics;
 
   //Custom Item Builder for the list
   
@@ -37,7 +37,7 @@ class UnorderedList<T> extends StatefulWidget {
   
   final Function(T? item)? onTap;
 
-  UnorderedList(
+  const UnorderedList(
     {
     super.key,
     required this.items,
@@ -113,7 +113,7 @@ class _UnorderedListState<T> extends State<UnorderedList<T>> {
 
       if(widget.bulletIcon==null){
         // Set default bullet icon
-        prefixIcon = ListIcons.Bullet;
+        prefixIcon = ListIcons.bullet;
       }
       else{
         // set icon provided by the user

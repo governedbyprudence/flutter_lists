@@ -1,7 +1,10 @@
 name: flutter_lists
 description: A user-friendly Flutter package designed to make the process of creating unordered lists in Flutter applications easy and straightforward.
 version: 0.0.1
-homepage:
+
+homepage: https://github.com/governedbyprudence/flutter_lists
+repository: https://github.com/governedbyprudence/flutter_lists.git
+
 
 environment:
   sdk: '>=2.19.2 <3.0.0'
