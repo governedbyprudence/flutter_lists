@@ -42,6 +42,7 @@ class UnorderedList<T> extends StatefulWidget {
     super.key,
     required this.items,
     this.bulletIcon,
+    this.physics,
     this.iconColor,
     this.itemBuilder,
     this.onTap,
