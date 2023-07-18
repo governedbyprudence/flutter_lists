@@ -179,6 +179,145 @@ UnorderedList<Task>(
 | onTap            | (Optional) Function to handle the tap event when an item in the list is tapped. | void Function(T?)?   |   |
 
 
+## Icons that can be used
+
+Here is a table of given icons that you may use as bullets.
+
+An example of an icon given in the package
+```
+ListIcons.hollowCirle
+```
+
+Sure! Here's a markdown table with the icon name and the icon represented in text format:
+
+| Icon Name         | Icon |
+|-------------------|------|
+| solidCircle       | •    |
+| hollowCircle      | ◦    |
+| solidSquare       | ▪    |
+| hollowSquare      | ▫    |
+| bulletPoint       | ‣    |
+| arrow             | ➔    |
+| checkmark         | ✓    |
+| star              | ★    |
+| heart             | ❤    |
+| lightning         | ⚡    |
+| musicNote         | ♫    |
+| sun               | ☀    |
+| moon              | ☽    |
+| phone             | ☎    |
+| email             | ✉    |
+| scissors          | ✂    |
+| book              | 📕   |
+| clock             | 🕒   |
+| globe             | 🌎   |
+| gift              | 🎁   |
+| plane             | ✈    |
+| car               | 🚗   |
+| bike              | 🚲   |
+| anchor            | ⚓    |
+| umbrella          | ☂    |
+| cup               | ☕    |
+| camera            | 📷   |
+| film              | 🎞   |
+| smartphone        | 📱   |
+| laptop            | 💻   |
+| graduationCap     | 🎓   |
+| medal             | 🎖   |
+| trophy            | 🏆   |
+| basketball        | 🏀   |
+| football          | 🏈   |
+| tennis            | 🎾   |
+| soccerBall        | ⚽   |
+| baseball          | ⚾   |
+| golf              | ⛳   |
+| fishing           | 🎣   |
+| bicycle           | 🚴   |
+| swimmer           | 🏊   |
+| ski               | 🎿   |
+| moneyBag          | 💰   |
+| creditCard        | 💳   |
+| shoppingCart      | 🛒   |
+| giftBox           | 🎝   |
+| balloon           | 🎈   |
+| partyPopper       | 🎉   |
+| microphone        | 🎤   |
+| headphones        | 🎧   |
+| radio             | 📻   |
+| television        | 📺   |
+| gameController    | 🎮   |
+| puzzle            | 🧩   |
+| hammer            | 🔨   |
+| wrench            | 🔧   |
+| lightBulb         | 💡   |
+| lock              | 🔒   |
+| key               | 🔑   |
+| umbrellaClosed    | ☂    |
+| umbrellaOpen      | ☂☔  |
+| recycle           | ♻    |
+| map               | 🗺   |
+| compass           | 🧭   |
+| house             | 🏠   |
+| building          | 🏢   |
+| school            | 🏫   |
+| hospital          | 🏥   |
+| bank              | 🏦   |
+| postOffice        | 🏣   |
+| hotel             | 🏨   |
+| airport           | 🚤   |
+| bus               | 🚍   |
+| train             | 🚆   |
+| ship              | 🚢   |
+| rocket            | 🚀   |
+| fire              | 🔥   |
+| waterDrop         | 💧   |
+| leaf              | 🍂   |
+| tree              | 🌳   |
+| rainbow           | 🌈   |
+| snowflake         | ❄   |
+| clouds            | ☁   |
+| thunderstorm      | ⛈   |
+| sunnyClouds       | 🌤   |
+| thermometer       | 🌡   |
+| hot               | 🔥   |
+| cold              | ❄   |
+| flag              | 🚩   |
+| mapPin            | 📍   |
+| heartBeat         | 💓   |
+| brain             | 🧠   |
+| bone              | 🦴   |
+| starOfDavid       | ✡   |
+| yinYang           | ☯   |
+| atom              | ⚛   |
+| man               | 👨   |
+| woman             | 👩   |
+| baby              | 👶   |
+| person            | 🧑   |
+| people            | 👥   |
+| family            | 👪   |
+| handshake         | 👍   |
+| thumbsUp          | 👍   |
+| thumbsDown        | 👎   |
+| peace             | ☮   |
+| wheelchair        | ♿   |
+| eye               | 👁   |
+| ear               | 👂   |
+| nose              | 👃   |
+| mouth             | 👄   |
+| hand              | ✋   |
+| footprints        | 👣   |
+| brainWave         | 🧠   |
+| sleep             | 😴   |
+| angel             | 👼   |
+| ghost             | 👻   |
+| skull             | 💀   |
+| cat               | 😺   |
+| dog               | 🐕   |
+| bear              | 🐻   |
+| elephant          | 🐘   |
+| penguin           | 🐧   |
+| fish              | 🐟   |
+
 ## Contributing
 
 If you have suggestions for improving the package, please [open an issue or
