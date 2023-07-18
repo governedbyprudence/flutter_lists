@@ -178,6 +178,12 @@ UnorderedList<Task>(
 | titleBuilder     | (Optional) Function that provides a custom title for each item in the list.     | String Function(T?)? |   |
 | onTap            | (Optional) Function to handle the tap event when an item in the list is tapped. | void Function(T?)?   |   |
 
+
+## Contributing
+
+If you have suggestions for improving the package, please [open an issue or
+pull request on GitHub](https://github.com/governedbyprudence/flutter_lists).
+
 ## Additional information
 
 To be implemented
